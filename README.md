@@ -6,6 +6,8 @@ generates PDF invoices through a REST API and browser dashboard.
 
 ![Inventory Manager article and customer dashboard](https://github.com/user-attachments/assets/71478ac1-54ac-4c2a-bbb3-d66764ae643e)
 
+![Inventory Manager order workflow](docs/orders.jpg)
+
 ## Why this project exists
 
 This project explores full-stack Rust services, structured inventory workflows,
