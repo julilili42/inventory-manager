@@ -1,42 +1,31 @@
-# Inventory Management Tool with Rust REST API and React TypeScript Frontend
+# Inventory Manager
 
-Inventory Manager is a web-based application designed to simplify inventory management by linking articles, customers, and orders. It provides a clear and structured interface for tracking stock levels, 
-managing customer data, and generating PDF invoices. 
+A web-based inventory management tool written in Rust and React. It links
+articles, customers, and orders, tracks stock levels, imports records, and
+generates PDF invoices through a REST API and browser dashboard.
 
-Key features are:
+![Inventory Manager article and customer dashboard](https://github.com/user-attachments/assets/71478ac1-54ac-4c2a-bbb3-d66764ae643e)
 
-* Article & Customer Management – Create, view, delete and import articles and customer records.
-* Order Processing – Generate and manage orders with automated PDF invoice generation (via [headless chromium](https://github.com/rust-headless-chrome/rust-headless-chrome)).
-* Modern Tech Stack – Built with Rust (REST API), SQLite (Database), React & TypeScript (Frontend).
-* API documentation with [Swagger UI](https://swagger.io/tools/swagger-ui/)
-  
-## Technologies Used
-- Frontend: React, TypeScript, shadcn Library
-- Backend: Rust, Axum (REST API)
-- Database: SQLite
+## Why this project exists
 
-## Preview
-### Article and Customers
-![output](https://github.com/user-attachments/assets/71478ac1-54ac-4c2a-bbb3-d66764ae643e)
+This project explores full-stack Rust services, structured inventory workflows,
+SQLite-backed persistence, API documentation, and PDF invoice generation for
+small business-style operations.
 
-### Orders
-![order-ezgif com-speed](https://github.com/user-attachments/assets/2ff2b8a1-cc0b-438c-b78c-749f0d97f9db)
+## Features
 
+- Article and customer management
+- CSV import for inventory and customer records
+- Order processing with automated PDF invoice generation
+- Stock-level tracking
+- REST API with Swagger UI documentation
+- React/Vite dashboard for articles, customers, and orders
 
-## Installation and Running the Application
+## Tech Stack
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev 
-```
-
-### Backend
-```bash
-cd backend
-cargo build
-cargo run
-```
-
-The application should now be running in your browser.
+- Rust, Tokio, Axum
+- SQLite, rusqlite, r2d2
+- utoipa, Swagger UI
+- headless_chrome, printpdf
+- React, TypeScript, Vite
+- Tailwind CSS, shadcn/ui

@@ -1,4 +1,3 @@
-// traits.rs
 use rusqlite::types::ToSqlOutput;
 use rusqlite::{Connection, Result, Row};
 

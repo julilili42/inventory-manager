@@ -1,4 +1,3 @@
-// operations.rs
 use rusqlite::{params, Connection, Error, Result};
 
 use axum::{http::StatusCode, response::Json as AxumJson};

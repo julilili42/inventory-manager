@@ -1,4 +1,3 @@
-// main.rs
 mod api;
 mod core;
 use api::server;

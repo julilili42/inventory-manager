@@ -1,14 +1,13 @@
-// types.rs
 use crate::core::operations::{fetch_order_items, find_record_by_id};
 use crate::core::traits::{Insertable, Mappable, Searchable};
 use r2d2_sqlite::SqliteConnectionManager;
 use rusqlite::types::{Null, ToSqlOutput};
 use rusqlite::{params, Connection, Error, Result, Row};
 use serde::{Deserialize, Serialize};
-use utoipa::ToSchema;
 use std::collections::HashMap;
 use std::sync::Arc;
 use strum_macros::{Display, EnumString};
+use utoipa::ToSchema;
 
 #[derive(Serialize, Deserialize, Debug, ToSchema)]
 pub struct Article {
@@ -468,8 +467,6 @@ impl Statistics {
     }
 }
 
-
-
 #[derive(Serialize, Deserialize, Debug, ToSchema)]
 #[serde(tag = "type", content = "data")]
 pub enum ApiResponse {
@@ -477,7 +474,5 @@ pub enum ApiResponse {
     Customer(Customer),
     Order(Order),
 }
-
-
 
 pub type DbPool = Arc<r2d2::Pool<SqliteConnectionManager>>;
