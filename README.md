@@ -8,6 +8,26 @@ generates PDF invoices through a REST API and browser dashboard.
 
 ![Inventory Manager order workflow](docs/orders.jpg)
 
+## Get Started
+
+Start the backend and frontend in two terminals:
+
+```sh
+cd backend
+cargo run
+```
+
+```sh
+cd frontend
+npm install
+npm run dev
+```
+
+Open the dashboard at `http://localhost:5173`. The API listens on
+`http://127.0.0.1:8080/api`; Swagger UI is available at
+`http://127.0.0.1:8080/api/docs`. The backend creates `data/database.db`
+automatically.
+
 ## Why this project exists
 
 This project explores full-stack Rust services, structured inventory workflows,
